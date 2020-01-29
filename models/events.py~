@@ -47,6 +47,9 @@ class EventCultivar(models.Model):
     recurrent = fields.Boolean(string="Is recurrent?")
     recurrence_id = fields.Many2one("event.recurrence")
     product_type_id = fields.Many2many("event.product.type")
+    
+    product_subtype_ids = fields.Many2many("event.product.type", domain="[('parent_id', 'in',product_type_id )]")
+    
     product_ids = fields.Many2many("event.product")
     e_anos = fields.Char(string="Numero de edições")
 

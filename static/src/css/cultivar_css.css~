@@ -214,7 +214,7 @@ padding: 10px;
 .breadcrumb {
     background: transparent;!important;
     font-family: Rajdhani; 
-    color: black;
+    color: white;
     border-radius: 0;
 
     
